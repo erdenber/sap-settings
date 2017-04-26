@@ -2,133 +2,69 @@
 <?xml-stylesheet type="text/xsl" href="lang_user.xslt"?>
 <XMLConfigSettings>
 	<EXPANDS>
-		<Expand key="***">
-			<Descr>
-				***.....
-			</Descr>
-			<Text>
-				**********************************************************************
-			</Text>
-		</Expand>
-		<Expand key="*--">
-			<Descr>
-				*-------...
-			</Descr>
-			<Text>
-				*--------------------------------------------------------------------*
-			</Text>
-		</Expand>
-		<Expand key="case">
-			<Descr>
-				Case (§)
-			</Descr>
-			<Text>
-				CASE |.\n WHEN .\n WHEN .\n WHEN OTHERS.\nENDCASE.
-			</Text>
-		</Expand>
 		<Expand key="cond">
-			<Descr>
-				cond(...)
-			</Descr>
-			<Text>
-				COND #( WHEN |xx THEN yy\n WHEN xx THEN yy\n ).\n
-			</Text>
-		</Expand>
-		<Expand key="define">
-			<Descr>
-				Define (§)
-			</Descr>
-			<Text>
-				DEFINE |.\n%SurroundedText%\nEND-OF-DEFINITION.
-			</Text>
-		</Expand>
-		<Expand key="do">
-			<Descr>
-				Do (§)
-			</Descr>
-			<Text>
-				DO | TIMES.\n%SurroundedText%\nENDDO.
-			</Text>
-		</Expand>
-		<Expand key="if">
-			<Descr>
-				If (§)
-			</Descr>
-			<Text>
-				IF |.\n%SurroundedText%\nENDIF.
-			</Text>
-		</Expand>
-		<Expand key="ife">
-			<Descr>
-				If (§) Else
-			</Descr>
-			<Text>
-				IF |.\n%SurroundedText%\nELSE.\n\nENDIF.
-			</Text>
-		</Expand>
-		<Expand key="itab">
-			<Descr>
-				itab(...)
-			</Descr>
-			<Text>
-				VALUE #( ( | ) \n ( )\n ).
-			</Text>
+			<Descr>cond(...)</Descr>
+			<Text>COND #( WHEN |xx THEN yy\n WHEN xx THEN yy\n ).\n</Text>
 		</Expand>
 		<Expand key="loop">
-			<Descr>
-				Loop (§)
-			</Descr>
-			<Text>
-				LOOP AT %itab% ASSIGNING FIELD-SYMBOL(&lt;%fsymbol%&gt;).\n  |%SurroundedText%\nENDLOOP.\n
-			</Text>
+			<Descr>Loop (§)</Descr>
+			<Text>LOOP AT %itab% ASSIGNING FIELD-SYMBOL(&lt;%fsymbol%&gt;).\n  |%SurroundedText%\nENDLOOP.\n</Text>
 		</Expand>
-		<Expand key="region">
-			<Descr>
-				Region (§)
-			</Descr>
-			<Text>
-				"$. Region %Region Name%\n%SurroundedText%\n"$. Endregion %Region Name%
-			</Text>
-		</Expand>
-		<Expand key="seltab">
-			<Descr>
-				seltab(...)
-			</Descr>
-			<Text>
-				DATA: %seltab name% type %for type%.\n\n%seltab name% = VALUE #( sign = 'I' option = 'EQ'| ( low = xx )\n ( low = xx )\n sign = 'I' option = 'BT' ( low = xx high = yy )\n ( low = xx high = yy ) \n ).\n
-			</Text>
-		</Expand>
-		<Expand key="switch">
-			<Descr>
-				switch(...)
-			</Descr>
-			<Text>
-				SWITCH #( |xx\n WHEN a THEN b\n ).\n
-			</Text>
-		</Expand>
-		<Expand key="try">
-			<Descr>
-				Try (§)
-			</Descr>
-			<Text>
-				TRY |.\n%SurroundedText%\nCATCH .\n\nENDTRY.
-			</Text>
-		</Expand>
-		<Expand key="types">
-			<Descr>
-				types begin of ...
-			</Descr>
-			<Text>
-				TYPES: BEGIN OF %type name%,\n |xx TYPE yy,\n END OF %type name%.
-			</Text>
+		<Expand key="do">
+			<Descr>Do (§)</Descr>
+			<Text>DO | TIMES.\n%SurroundedText%\nENDDO.</Text>
 		</Expand>
 		<Expand key="while">
-			<Descr>
-				While (§)
-			</Descr>
-			<Text>
-				WHILE |.\n%SurroundedText%\nENDWHILE.
-			</Text>
+			<Descr>While (§)</Descr>
+			<Text>WHILE |.\n%SurroundedText%\nENDWHILE.</Text>
+		</Expand>
+		<Expand key="seltab">
+			<Descr>seltab(...)</Descr>
+			<Text>DATA: %seltab name% type %for type%.\n\n%seltab name% = VALUE #( sign = 'I' option = 'EQ'| ( low = xx )\n ( low = xx )\n sign = 'I' option = 'BT' ( low = xx high = yy )\n ( low = xx high = yy ) \n ).\n</Text>
+		</Expand>
+		<Expand key="itab">
+			<Descr>itab(...)</Descr>
+			<Text>VALUE #( ( | ) \n ( )\n ).</Text>
+		</Expand>
+		<Expand key="*--">
+			<Descr>*-------...</Descr>
+			<Text>*--------------------------------------------------------------------*</Text>
+		</Expand>
+		<Expand key="region">
+			<Descr>Region (§)</Descr>
+			<Text>"$. Region %Region Name%\n%SurroundedText%\n"$. Endregion %Region Name%</Text>
+		</Expand>
+		<Expand key="types">
+			<Descr>types begin of ...</Descr>
+			<Text>TYPES: BEGIN OF %type name%,\n |xx TYPE yy,\n END OF %type name%.</Text>
+		</Expand>
+		<Expand key="if">
+			<Descr>If (§)</Descr>
+			<Text>IF |.\n%SurroundedText%\nENDIF.</Text>
+		</Expand>
+		<Expand key="try">
+			<Descr>Try (§)</Descr>
+			<Text>TRY |.\n%SurroundedText%\nCATCH .\n\nENDTRY.</Text>
+		</Expand>
+		<Expand key="ife">
+			<Descr>If (§) Else</Descr>
+			<Text>IF |.\n%SurroundedText%\nELSE.\n\nENDIF.</Text>
+		</Expand>
+		<Expand key="switch">
+			<Descr>switch(...)</Descr>
+			<Text>SWITCH #( |xx\n WHEN a THEN b\n ).\n</Text>
+		</Expand>
+		<Expand key="***">
+			<Descr>***.....</Descr>
+			<Text>**********************************************************************</Text>
+		</Expand>
+		<Expand key="case">
+			<Descr>Case (§)</Descr>
+			<Text>CASE |.\n WHEN .\n WHEN .\n WHEN OTHERS.\nENDCASE.</Text>
+		</Expand>
+		<Expand key="define">
+			<Descr>Define (§)</Descr>
+			<Text>DEFINE |.\n%SurroundedText%\nEND-OF-DEFINITION.</Text>
 		</Expand>
 	</EXPANDS>
 	<FILEINFO>
