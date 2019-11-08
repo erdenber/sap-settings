@@ -50,23 +50,23 @@
 			<Descr>Change Hist(...)</Descr>
 			<Text>*&amp; Änderungshistorie:\n*&amp;  |dd.mm.yyyy &lt;Name&gt;          Report angelegt\n*&amp;  dd.mm.yyyy &lt;Name&gt;          &lt;Änderungen&gt;\n*&amp;\n*&amp;---------------------------------------------------------------------*</Text>
 		</Expand>
-		<Expand key="try">
-			<Descr>Try (§)</Descr>
-			<Text>TRY |.\n%SurroundedText%\nCATCH .\n\nENDTRY.</Text>
-		</Expand>
 		<Expand key="ife">
 			<Descr>If (§) Else</Descr>
 			<Text>IF |.\n%SurroundedText%\nELSE.\n\nENDIF.</Text>
 		</Expand>
-		<Expand key="types">
-			<Descr>types begin of ...</Descr>
-			<Text>TYPES: BEGIN OF %type name%,\n |xx TYPE yy,\n END OF %type name%.</Text>
+		<Expand key="try">
+			<Descr>Try (§)</Descr>
+			<Text>TRY |.\n%SurroundedText%\nCATCH .\n\nENDTRY.</Text>
 		</Expand>
 		<Expand key="define">
 			<Descr>Define (§)</Descr>
 			<Text>DEFINE |.\n%SurroundedText%\nEND-OF-DEFINITION.</Text>
 		</Expand>
-		<Expand key="case"><Descr>Case (§)</Descr><Text>CASE |.\n WHEN .\n WHEN .\n WHEN OTHERS.\nENDCASE.</Text></Expand><Expand key="loop"><Descr>Loop (§)</Descr><Text>LOOP AT %itab% ASSIGNING FIELD-SYMBOL(&lt;%fsymbol%&gt;).\n  |%SurroundedText%\nENDLOOP.\n</Text></Expand></EXPANDS>
+		<Expand key="types">
+			<Descr>types begin of ...</Descr>
+			<Text>TYPES: BEGIN OF %type name%,\n |xx TYPE yy,\n END OF %type name%.</Text>
+		</Expand>
+		<Expand key="loop"><Descr>Loop (§)</Descr><Text>LOOP AT %itab% ASSIGNING FIELD-SYMBOL(&lt;%fsymbol%&gt;).\n  |%SurroundedText%\nENDLOOP.\n</Text></Expand><Expand key="case"><Descr>Case (§)</Descr><Text>CASE |.\n WHEN .\n WHEN .\n WHEN OTHERS.\nENDCASE.</Text></Expand></EXPANDS>
 	<FILEINFO>
 		<Author>
 			Alex Arseniev
